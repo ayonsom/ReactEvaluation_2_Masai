@@ -33,7 +33,7 @@ const AllNations = () => {
     }
   return (
     <div>
-      <h2>From allNations...</h2>
+      <h3>Please click on the button below to fetch all Nations...</h3>
       <button onClick={fetchNations}>Fetch Nations</button>
 
       {countryDetails.length === 0? 
@@ -55,7 +55,7 @@ const AllNations = () => {
         <h1>Country Details : </h1>
         <h4>Native Name : {countryDetails[0].name.nativeName.eng.official}</h4>
         <p>Currrency Name : {countryDetails[0].currencies.SHP.name}</p>
-        <p>{JSON.stringify(countryDetails[0])}</p>
+        {/* <p>{JSON.stringify(countryDetails[0])}</p> */}
         
         
         </div>)
