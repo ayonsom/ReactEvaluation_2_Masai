@@ -1,3 +1,22 @@
+#all-countries-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+#flag{
+  height: 200px;
+  
+}
+#flag-image{
+  max-height: 200px;
+  max-width: 300px;
+}
+.country-card{
+  background: #cececec0;
+  padding: 7px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -45,6 +64,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  border-color: #44e704;
 }
 button:hover {
   border-color: #646cff;
