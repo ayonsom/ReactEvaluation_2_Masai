@@ -51,11 +51,13 @@ const AllNations = () => {
             </div>
            
         ))}
-      </div>) : (<div>
-        <h1>Country Details : </h1>
-        <h4>Native Name : {countryDetails[0].name.nativeName.eng.official}</h4>
-        <p>Currrency Name : {countryDetails[0].currencies.SHP.name}</p>
-        {/* <p>{JSON.stringify(countryDetails[0])}</p> */}
+      </div>) : (
+        <div>
+            <button onClick={(e)=>setCountryDetails([])}>Back to All Nations</button>
+            <h2>Country Details : </h2>
+            <h4>Native Name : {countryDetails[0].name.nativeName.eng.official}</h4>
+            <p>Currrency Name : {countryDetails[0].currencies.SHP.name}</p>
+            {/* <p>{JSON.stringify(countryDetails[0])}</p> */}
         
         
         </div>)
